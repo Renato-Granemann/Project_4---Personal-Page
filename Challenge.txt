@@ -1,0 +1,68 @@
+PROJECT IDEA: Personal Portfolio Website with Central Navigation
+
+Project Description:
+Create a personal portfolio website that integrates all the HTML and CSS concepts you've learned. The website should have multiple pages connected through a central navigation hub. All key HTML elements (lists, tables, forms, images, semantics) and CSS concepts (box model, selectors, colors, units, text styling, dimensions, display properties) must be used.
+
+Requirements:
+
+1. Central Navigation:
+- Create a fixed navigation bar or a central navigation hub (e.g., on the homepage, big links/cards leading to other sections).
+- Use <nav> elements and semantic structure.
+
+2. Homepage:
+- Welcome text with headings, paragraphs, horizontal lines (<hr>).
+- An image of yourself or a symbol (<img>).
+- A quote or slogan in a block element.
+
+3. About Me Page:
+- Use text elements (<p>, <strong>, <em>, etc.).
+- An image of a hobby.
+- An unordered list (<ul>) of your interests.
+
+4. Projects Page:
+- List of your previous projects using an ordered list (<ol>).
+- For one project: a table with:
+  - Name
+  - Technologies
+  - Completion date
+- Optionally: Link to GitHub or external sites with <a>.
+
+5. Contact Page:
+- A form (<form>) with:
+  - Name (text field)
+  - Email (input type "email")
+  - Message (textarea)
+  - Submit button (<button>)
+- Style the form nicely.
+
+6. Extras:
+- Use CSS for:
+  - Colors and color schemes
+  - Consistent typography design
+  - The box model for container styling
+  - Layout with block and inline elements
+  - Display properties (block, inline, flex or grid)
+- Use various units (px, %, em, rem)
+- Use borders (<border>) to separate sections
+- Use <div> containers for structure
+
+Optional - Advanced extensions:
+- CSS animations on navigation hover
+- Responsive design (mobile-friendly)
+- CSS Grid or Flexbox to center the navigation
+- Basic form validation (e.g., required, pattern)
+
+Suggested structure:
+index.html         --> Homepage
+about.html         --> About Me
+projects.html      --> Projects
+contact.html       --> Contact Form
+style.css          --> Main stylesheet
+
+Why this project is ideal:
+- It integrates all the HTML elements you've learned.
+- You practice CSS layouts and box model application.
+- You apply semantic structure and form creation.
+- It's practical: you'll really need a portfolio later!
+
+Let me know if you want a folder structure example and base code for each page.

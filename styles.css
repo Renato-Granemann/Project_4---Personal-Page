@@ -1,0 +1,145 @@
+:root {
+    /* Existing color variables */
+    --sidebar-color: #004346;
+    --sidebar-width: 250px;        /* Fixed width for sidebar */
+    --sidebar-text-color: #ffffff; /* Better contrast for light text on dark bg */
+    --link-hover-color: #001242;
+    --link-color: #0094C6;
+}
+
+/* Changed body to flex layout for sidebar + content columns */
+body {
+    display: flex;                 /* Enables two-column layout */
+    margin: 0;                     /* Remove default margin */
+    min-height: 100vh;            /* Full viewport height */
+    font-family: Arial, sans-serif; /* Added default font */
+}
+span {
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+}
+
+.sidebar-nav a:hover{
+    text-decoration: none;
+}
+
+.main-content a:link, a:visited{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.main-content a:hover, a:active{
+    color: var(--link-hover-color);
+    text-decoration: underline;
+
+}
+
+/* SIDEBAR STYLING - Complete redesign */
+.sidebar {
+    width: var(--sidebar-width);   /* Use variable for easy adjustment */
+    background-color: var(--sidebar-color); /* Using existing color variable */
+    color: var(--sidebar-text-color); /* White text for contrast */
+    padding: 1rem;                /* Internal spacing */
+    box-sizing: border-box;        /* Include padding in width calculation */
+    height: 100vh;                /* Full viewport height */
+    position: sticky;             /* Stays visible while scrolling */
+    top: 0;                       /* Stick to top of viewport */
+    display: flex;                /* Flex layout for internal organization */
+    flex-direction: column;       /* Stack children vertically */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Sidebar header section */
+.sidebar-header {
+    padding: 1rem;                /* Spacing around header content */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator */
+    margin-bottom: 1rem;          /* Space between header and nav */
+}
+
+/* Navigation container */
+.sidebar-nav {
+    display: flex;                /* Flex layout for nav items */
+    flex-direction: column;       /* Stack links vertically */
+    gap: 0.5rem;                  /* Space between nav items */
+}
+
+/* Individual navigation items - Complete redesign */
+.sidebar-item {
+    display: flex;                /* Flex layout for icon + text */
+    align-items: center;          /* Vertically center items */
+    gap: 1rem;                    /* Space between icon and text */
+    padding: 0.8rem 1rem;        /* Comfortable click area */
+    border-radius: 8px;           /* Rounded corners */
+    color: var(--sidebar-text-color); /* Text color */
+    text-decoration: none;        /* Remove underline */
+    transition: all 0.3s ease;    /* Smooth hover effects */
+}
+
+/* Hover state for nav items */
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light highlight */
+    transform: translateX(5px);   /* Subtle movement effect */
+}
+
+/* Active state for nav items */
+.sidebar-item:active {
+    background-color: rgba(255, 255, 255, 0.2); /* More visible press effect */
+}
+
+/* MAIN CONTENT AREA - Now properly separated from sidebar */
+.main-content {
+    flex: 1;                      /* Takes remaining space */
+    padding: 2rem;                /* Comfortable spacing */
+    max-width: 800px;             /* Optimal line length for reading */
+    margin: 0 auto;               /* Center content */
+}
+
+
+/* TABLE */
+th, td {
+    border: 2px solid var(--sidebar-color);
+    padding: 4px 10px
+}
+
+/* Image styling - Added some polish */
+.image {
+    max-width: 100%;             /* Responsive image */
+    height: auto;                /* Maintain aspect ratio */
+    border-radius: 8px;          /* Match sidebar rounded corners */
+    margin: 1rem 0;              /* Consistent spacing */
+}
+
+/* RESPONSIVE DESIGN - For mobile devices */
+@media (max-width: 768px) {
+    /* Switch from row to column layout on small screens */
+    body {
+        flex-direction: column;   /* Stack sidebar above content */
+    }
+    
+    /* Adjust sidebar for mobile */
+    .sidebar {
+        width: 100%;             /* Full width */
+        height: auto;            /* Auto height based on content */
+        position: relative;      /* Remove sticky behavior */
+    }
+    
+    /* Change nav to horizontal layout on mobile */
+    .sidebar-nav {
+        flex-direction: row;     /* Horizontal nav */
+        flex-wrap: wrap;         /* Allow multiple rows if needed */
+        justify-content: center; /* Center items */
+    }
+    
+    /* Adjust nav items for mobile */
+    .sidebar-item {
+        flex: 1;                 /* Flexible width */
+        min-width: 120px;        /* Minimum width */
+        justify-content: center; /* Center content */
+        text-align: center;     /* Center text */
+    }
+    
+    /* Change hover effect for mobile */
+    .sidebar-item:hover {
+        transform: translateY(5px); /* Move down instead of right */
+    }
+}
