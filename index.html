@@ -4,76 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2°D</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <section class="sidebar">
-        <!-- Navigation Header -->
+    <!-- SIDEBAR CONTAINER - Replaces the navigation bar -->
+    <!-- Using fixed sidebar instead of centered nav bar for modern layout -->
+    <div class="sidebar">
+        <!-- Sidebar header gives personal welcome message -->
         <div class="sidebar-header">
-            <h1> Navegação </h1>
+            <h2>My Website</h2> <!-- Site title/logo area -->
+            <p>Welcome to my space</p> <!-- Personal greeting -->
         </div>
+
+        <!-- Navigation links - Changed from horizontal to vertical layout -->
         <nav class="sidebar-nav">
-
-            <a href="index.html" class="sidebar-item"> <img src="/imagens/home.svg" class="svg-image"> <span>
-                    Página inicial
-                </span></a>
-
-            <a href="pages/datas.html" class="sidebar-item"> <img src="/imagens/datas.svg" class="svg-image"> <span>
-                    Datas
-                </span></a>
-
-            <a href="pages/horarios.html" class="sidebar-item"> <img src="imagens/horarios.svg" class="svg-image">
-                <span> Horários
-                </span></a>
-
-            <a href="pages/anotacoes.html" class="sidebar-item"> <img src="/imagens/anotacoes.svg" class="svg-image">
-                <span> Anotações
-                </span></a>
-
-            <a href="pages/materiais.html" class="sidebar-item"> <img src="imagens/materiais.svg" class="svg-image">
-                <span>
-                    Materiais
-                </span></a>
-
-            <a href="pages/formulas.html" class="sidebar-item"> <img src="imagens/formulas.svg" class="svg-image">
-                <span>
-                    Fórmulas
-                </span></a>
-
-            <a href="pages/galeria.html" class="sidebar-item"> <img src="/imagens/galeria.svg" class="svg-image">
-                <span>
-                    Galeria
-                </span></a>
-
-            <a href="pages/projetos.html" class="sidebar-item"> <img src="/imagens/projetos.svg" class="svg-image">
-                <span>
-                    Projetos
-                </span></a>
-
-            <a href="pages/github.html" class="sidebar-item"> <img src="/imagens/github.svg" class="svg-image"> <span>
-                    GitHub
-                </span></a>
-
-            <a href="pages/creditos.html" class="sidebar-item"> <img src="/imagens/creditos.svg" class="svg-image">
-                <span>
-                    Créditos
-                </span></a>
-
+            <!-- Each nav item now has icon + text in flex layout -->
+            <a href="index.html" class="sidebar-item" id="home-page">
+                <img src="images/home-page-icon.svg" alt="Home icon">
+                <span>Home page</span> <!-- Using span instead of <br> for better styling -->
+            </a>
+            <a href="sub-pages/about-me-page.html" class="sidebar-item" id="about-me-page">
+                <img src="images/about-me-icon.svg" alt="About me icon">
+                <span>About me</span>
+            </a>
+            <a href="sub-pages/projects-page.html" class="sidebar-item" id="projects-page">
+                <img src="images/project.-icon.svg" alt="Projects icon">
+                <span>My projects</span>
+            </a>
+            <a href="sub-pages/contact-page.html" class="sidebar-item" id="contact-page">
+                <img src="images/contact-page-icon.svg" alt="Contact icon">
+                <span>Contact me</span>
+            </a>
         </nav>
-    </section>
-    <section class="main-content">
-        <div class="main-content-header">
-            <h1> Página inicial </h1>
-        </div>
-        <div class="main-content-body">
-            <h2> Bem-vindo(a)! </h2>
-            <p> Essa página foi criada com o intuito de organizar os materiais e informações do 2° ano D, do CAP-UEM.
-            </p>
-        </div>
+    </div>
 
-    </section>
+    <!-- MAIN CONTENT AREA - Now separate from navigation -->
+    <div class="main-content">
+        <!-- All existing content remains here but now with better spacing -->
+        <h1>Home page</h1>
+        <p>Welcome to my webpage. This was created is order to fixate my HTML and CSS knowledge, upon watching the
+            following
+            video: <a href="https://www.youtube.com/watch?v=iG2jotQo9NI&t=18304s"> HTML & CSS for Beginners | FREE MEGA
+                COURSE (7+ Hours!)</a>, produced by <a href="https://www.youtube.com/@envatotuts"> Envato Tuts+</a></p>
+
+        <!-- Content now has more breathing room -->
+        <p>This should be an image of myself, but I am too tired to take a selfie, send it to my e-mail, dowload it on
+            my
+            computer, moving it to the correct directory and linking it here. However, here it's an image of my Clash of
+            Clans
+            village (I am, indeed, very proud of it).</p>
+        <img src="images/my_village.png" class="image" id="my-village" alt="My Clash of Clans village">
+
+        <p>Paraphrasing South Africa's first democratically elected president (1994-1999), know and loved for his
+            commitment to peace, being an anti-apartheid revolutionary and political leader:</p>
+        <blockquote>
+            "Get me out of jail!!!" -- Nelson Rolihlahla Mandela
+        </blockquote>
+        <p>This quotation was used purely by fixating the usage of this tag, being merely an example. The content
+            written
+            on it may or may not be veridic.</p>
+    </div>
 </body>
 
 </html>
