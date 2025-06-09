@@ -1,0 +1,22 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer calendar shape -->
+  <rect x="10" y="20" width="80" height="70" rx="10" stroke="black" stroke-width="8" fill="none"/>
+
+  <!-- Top binding line -->
+  <line x1="10" y1="35" x2="90" y2="35" stroke="black" stroke-width="8"/>
+
+  <!-- Left ring -->
+  <line x1="30" y1="10" x2="30" y2="30" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Right ring -->
+  <line x1="70" y1="10" x2="70" y2="30" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Small squares representing days -->
+  <rect x="25" y="45" width="10" height="10" fill="black"/>
+  <rect x="45" y="45" width="10" height="10" fill="black"/>
+  <rect x="65" y="45" width="10" height="10" fill="black"/>
+  
+  <rect x="25" y="65" width="10" height="10" fill="black"/>
+  <rect x="45" y="65" width="10" height="10" fill="black"/>
+  <rect x="65" y="65" width="10" height="10" fill="black"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book cover -->
+  <rect x="20" y="20" width="60" height="60" rx="8" stroke="black" stroke-width="8" fill="none"/>
+
+  <!-- Spine line -->
+  <line x1="35" y1="20" x2="35" y2="80" stroke="black" stroke-width="8"/>
+
+  <!-- Page lines -->
+  <line x1="45" y1="30" x2="70" y2="30" stroke="black" stroke-width="6"/>
+  <line x1="45" y1="45" x2="70" y2="45" stroke="black" stroke-width="6"/>
+  <line x1="45" y1="60" x2="70" y2="60" stroke="black" stroke-width="6"/>
+</svg>
